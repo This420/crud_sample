@@ -1,0 +1,7 @@
+<html>
+	<form method="post" action="/user/update/{{.User.Id}}">
+		<input type="text" name="Name" value="{{.User.Name}}" />
+		<input type="submit" name="Submit" value="更新" />
+		<a href="/user/delete/{{.User.Id}}">削除</a>
+	</form>
+</html>
